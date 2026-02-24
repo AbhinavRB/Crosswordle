@@ -51,6 +51,15 @@ document.addEventListener("DOMContentLoaded", () => {
         let locked = Array(length).fill(false);
         let cursorIndex = 0;
 
+        input.addEventListener("focus", () => {
+            setTimeout(() => {
+                container.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }, 300); // delay allows mobile keyboard to open
+        });
+
         // Focus first word automatically
         if (wordIndex === 0) {
             input.focus();
@@ -59,6 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
         container.addEventListener("mousedown", () => {
             input.focus();
         });
+
+
 
         function render() {
             const allLocked = locked.every(val => val === true);
