@@ -130,7 +130,7 @@ h1 {
 
 .flex-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
 }
 
@@ -145,8 +145,10 @@ h1 {
 }
 
 .separator {
-    width: 50%;
-    height: 1px;
+    /* width: 50%;
+    height: 1px; */
+    width: 1px;
+    height: 100%;
     background-color: #24282b;
     margin-inline: auto;
 }
