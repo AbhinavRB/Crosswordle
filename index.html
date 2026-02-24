@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crosswordle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <video id="confetti" src="confetti.webm" muted></video>
+    <div class="header">
+        <h1 id="main-heading">hi, please solve me :)</h1>
+        <p id="subtext">Just tap the boxes and start typing</p>
+    </div>
+    <div class="flex-container">
+        <div class="panel panel-left">
+            <div class="crossword-word" data-solution="HAPPY">
+
+                <!-- Visual grid -->
+                <div class="grid">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                </div>
+
+                <!-- Hidden input for keyboard capture -->
+                <input type="text" class="hidden-input" maxlength="5" autocomplete="off" spellcheck="false" />
+
+            </div>
+
+            <button class="check-button">Check</button>
+
+            <div class="clue">
+                Joyful, starting to have a personal party yearly
+            </div>
+
+            <div class="hint-card" onclick="this.classList.toggle('revealed')">
+                <div class="hint-inner">
+                    <div class="hint-front">
+                        Tap for hint
+                    </div>
+                    <div class="hint-back">
+                        Starts of some words
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-right">
+            <div class="crossword-word" data-solution="BIRTHDAY">
+
+                <!-- Visual grid -->
+                <div class="grid">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                </div>
+
+                <!-- Hidden input for keyboard capture -->
+                <input type="text" class="hidden-input" maxlength="8" autocomplete="off" spellcheck="false" />
+
+            </div>
+
+            <button class="check-button">Check</button>
+
+            <div class="clue">
+                Special day when dry habit is changed up
+            </div>
+
+            <div class="hint-card" onclick="this.classList.toggle('revealed')">
+                <div class="hint-inner">
+                    <div class="hint-front">
+                        Tap for hint
+                    </div>
+                    <div class="hint-back">
+                        Changed up is an anagram indicator
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
