@@ -18,7 +18,7 @@ body {
     flex-direction: column;
 
     color: #ffffff;
-    background-color: #ffb6c1;
+    background-color: #000000;
     background-image: url('background.png');
     background-size: cover;
 }
