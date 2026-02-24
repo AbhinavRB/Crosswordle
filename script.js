@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             setTimeout(() => {
                 heading.textContent = "Happy birthday :)";
-                subtext.textContent = "Just trying some code, thought this would be a fun thing to do.";
+                subtext.textContent = "Just trying some code, thought this would be a fun thing to do. Also I know it's technically tomorrow.";
 
                 header.classList.remove("header-fade-out");
                 header.classList.add("header-bounce-in");
